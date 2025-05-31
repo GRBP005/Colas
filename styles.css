@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.ventanillas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ventanilla {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 250px;
+}
+
+select {
+  margin-top: 10px;
+}
+
+.cola {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.cola li {
+  background: #e0e0e0;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-radius: 5px;
+}

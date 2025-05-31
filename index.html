@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulación de Banco</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Simulador de Ventanillas de Banco</h1>
+  <div class="ventanillas">
+    <div class="ventanilla" id="ventanilla1">
+      <h2>Ventanilla 1</h2>
+      <select onchange="agregarTransaccion(1, this.value)">
+        <option value="">-- Seleccionar Transacción --</option>
+        <option value="deposito">Depósito</option>
+        <option value="retiro">Retiro</option>
+        <option value="transaccion">Transacción</option>
+        <option value="crearCuenta">Crear Cuenta</option>
+        <option value="prestamo">Préstamo</option>
+      </select>
+      <ul class="cola" id="cola1"></ul>
+    </div>
+
+    <div class="ventanilla" id="ventanilla2">
+      <h2>Ventanilla 2</h2>
+      <select onchange="agregarTransaccion(2, this.value)">
+        <option value="">-- Seleccionar Transacción --</option>
+        <option value="deposito">Depósito</option>
+        <option value="retiro">Retiro</option>
+        <option value="transaccion">Transacción</option>
+        <option value="crearCuenta">Crear Cuenta</option>
+        <option value="prestamo">Préstamo</option>
+      </select>
+      <ul class="cola" id="cola2"></ul>
+    </div>
+
+    <div class="ventanilla" id="ventanilla3">
+      <h2>Ventanilla 3</h2>
+      <select onchange="agregarTransaccion(3, this.value)">
+        <option value="">-- Seleccionar Transacción --</option>
+        <option value="deposito">Depósito</option>
+        <option value="retiro">Retiro</option>
+        <option value="transaccion">Transacción</option>
+        <option value="crearCuenta">Crear Cuenta</option>
+        <option value="prestamo">Préstamo</option>
+      </select>
+      <ul class="cola" id="cola3"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
